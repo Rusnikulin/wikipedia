@@ -1,0 +1,115 @@
+h1{
+font: 28.8px "Linux Libertine";
+}
+
+.sidebar{
+float: left;
+font: 12px sans-serif;
+color: #0645AD;
+line-height: 1.7;
+}
+.main{  
+margin-left: 200px;
+float: clear;
+}
+li.sidebar-a{
+    list-style-type: none;
+
+}
+
+.topnavigation{
+float: right;
+display: inline;
+color:#0645AD;
+font: 12px sans-serif;
+}
+
+.firstpanel{
+    margin-left: 200px;
+    display: inline;
+
+}
+
+
+.secondpanel{
+    display: inline;
+
+    margin-left: 600px;
+}
+
+.searching{
+    float: right;
+}
+
+.list{
+    background:#F8F9FA;
+    padding: 7px;
+    border: 1px solid #a2a9b1;
+    font:13.3px sans-serif;
+    width: 270px;
+    height: 320px;
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+}
+.sdvcd{
+    border: 1px ;
+    padding: 16.25px 8px 0px; 
+    text-decoration: none;
+    background-image: linear-gradient(to bottom,rgba(167,215,249,0) 0,#a7d7f9 100%);
+    background-size: 1px 100%;
+    font: 13px sans-serif;
+
+}
+
+.photos{
+
+    float: right;
+}
+
+h2{
+    font: 21px "Linux Libertine";
+    color: black;
+    
+}
+.sport{
+    margin-top: 50px;
+}
+ol {
+    /* убираем стандартную нумерацию */
+    list-style: none; 
+    /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */ 
+    counter-reset: li; 
+    }
+li.list-a:before {
+    /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+    counter-increment: li; 
+    /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+    content: counters(li,".") ". "; 
+
+
+}
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    }
+    th {
+    background:blue;
+    color: white;
+    padding: 20px 30px;
+    }
+    th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+    }
+    td {
+    padding-top: 20px;
+
+    }
+    th:first-child, td:first-child {
+    text-align: left;
+    }
